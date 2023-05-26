@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothesStore.API", "ClothesStore.API\ClothesStore.API.csproj", "{03A3F4A1-CE6A-409B-ACF9-FF043A224C79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClothesStore.Models", "ClothesStore.Models\ClothesStore.Models.csproj", "{EFDEF8FD-4BD6-4482-B4FE-7C48A1546B61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03A3F4A1-CE6A-409B-ACF9-FF043A224C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A3F4A1-CE6A-409B-ACF9-FF043A224C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A3F4A1-CE6A-409B-ACF9-FF043A224C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A3F4A1-CE6A-409B-ACF9-FF043A224C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDEF8FD-4BD6-4482-B4FE-7C48A1546B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDEF8FD-4BD6-4482-B4FE-7C48A1546B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDEF8FD-4BD6-4482-B4FE-7C48A1546B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDEF8FD-4BD6-4482-B4FE-7C48A1546B61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
