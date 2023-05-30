@@ -12,6 +12,7 @@ public class ClientsServices : IClientsService
         _clientsStorage = clientsStorage;
     }
 
+    
     public void CreateClient(Client client)
     {
         _clientsStorage.Save(client);
@@ -20,5 +21,10 @@ public class ClientsServices : IClientsService
     public IEnumerable<Client> GetAllClients()
     {
         return _clientsStorage.FetchAll();
+    }
+
+    public Client GetClientById(Guid clientId)
+    {
+        return _clientsStorage.Fetch(clientId);
     }
 }

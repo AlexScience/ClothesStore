@@ -21,6 +21,13 @@ public class ClientsController : ControllerBase
         var clients = _clientsService.GetAllClients();
         return Ok(clients);
     }
+    
+    [HttpGet("Get by Id")]
+    public ActionResult<IEnumerable<Client>> GetClientById(Guid clientId)
+    {
+        Client client = _clientsService.GetClientById(clientId);
+        return Ok(client);
+    }
 
     [HttpPost]
     public void Create(Client client)
