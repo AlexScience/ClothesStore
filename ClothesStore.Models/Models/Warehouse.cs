@@ -1,6 +1,6 @@
 namespace ClothesStore.Models.Models;
 
-public record Warehouse
+public record Warehouse : IEntity
 {
     public Guid Id { get; init; }
     public string Name { get; set; } = string.Empty;

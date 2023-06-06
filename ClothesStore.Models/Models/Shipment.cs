@@ -1,6 +1,6 @@
 namespace ClothesStore.Models.Models;
 
-public record Shipment
+public record Shipment : IEntity
 {
     public Guid Id { get; init; }
     public Guid WarehouseId { get; init; }

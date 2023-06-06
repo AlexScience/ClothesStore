@@ -22,4 +22,9 @@ public class ClientsServices : IClientsService
     {
         return _clientsStorage.FetchAll();
     }
+
+    public Client GetClientById(Guid clientId)
+    {
+        return _clientsStorage.Fetch(clientId);
+    }
 }

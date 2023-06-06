@@ -1,6 +1,6 @@
 namespace ClothesStore.Models.Models;
 
-public record StockItem
+public record StockItem 
 {
     public Guid WarehouseId { get; init; }
     public Guid ProductItemId { get; init; }

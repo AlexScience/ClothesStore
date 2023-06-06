@@ -1,6 +1,6 @@
 namespace ClothesStore.Models.Models;
 
-public record ProductItem
+public record ProductItem : IEntity
 {
     public Guid Id { get; init; }
     public string NomenclatureNumber { get; init; } = string.Empty;
