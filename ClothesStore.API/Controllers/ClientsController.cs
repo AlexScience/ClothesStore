@@ -28,7 +28,7 @@ public class ClientsController : ControllerBase
         Client client = _clientsService.GetClientById(clientId);
         return Ok(client);
     }
-
+    
     [HttpPost]
     public void Create(Client client)
     {

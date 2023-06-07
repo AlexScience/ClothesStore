@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<IDataStorage<Client>, ClientDataStorage>();
 builder.Services.AddScoped<IClientsService, ClientsServices>();
+builder.Services.AddScoped<IDataStorage<ProductItem>, ProductItemDataStorage>();
+builder.Services.AddScoped<IProductsService, ProductServices>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
