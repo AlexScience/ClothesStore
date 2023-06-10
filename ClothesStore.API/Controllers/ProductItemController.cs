@@ -16,17 +16,22 @@ public class ProductItemController : ControllerBase
     }
 
     [HttpGet("all")]
-
     public ActionResult<IEnumerable<ProductItem>> GetAllProductItem()
     {
         var product = _productsService.GetAllProductItem();
         return Ok(product);
     }
-    
+
+    [HttpGet("id")]
+    public ActionResult<IEnumerable<ProductItem>> GetProductById(Guid porductId)
+    {
+        ProductItem product = _productsService.GetProductItemId(porductId);
+        return Ok(product);
+    }
+
     [HttpPost]
     public void Create(ProductItem product)
     {
         _productsService.CreateProduct(product);
     }
-
 }
