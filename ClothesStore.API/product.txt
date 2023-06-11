@@ -1,1 +1,1 @@
-[{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","NomenclatureNumber":"Product","Name":"string","Category":"string","Description":"string"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa7","NomenclatureNumber":"Product2","Name":"string","Category":"string","Description":"string"}]
+[{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa7","NomenclatureNumber":"string","Name":"string","Category":"string","Description":"string"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa9","NomenclatureNumber":"string","Name":"string","Category":"string","Description":"string"}]

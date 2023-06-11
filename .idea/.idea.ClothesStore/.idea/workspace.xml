@@ -10,11 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f0b3c7-517a-43ca-9204-2daf77c3b5e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/OrderController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ShipmentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/WarehouseController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsEntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/OrderEntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ProductEntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ShipmentEntityService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/WarehouseEntityService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Controllers/ProductItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ProductItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IClientsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IProductsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/IEntityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ObjServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ObjEntityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ProductServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/client.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/product.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +43,22 @@
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/main" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/81a3bcf4bb6aa5e62a9839f9cfeeba6126496f4fa07d1e57b27a5176e42525/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/DAL/ClientDataStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/DAL/FileDataStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/DAL/IDataStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/Services/ClientsServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/Services/IServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ClothesStore.API/Services/ObjServices.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2QQFmAz9boW63sSlnRXu5zkpkEY" />
@@ -124,6 +157,9 @@
       <workItem from="1686120862639" duration="2367000" />
       <workItem from="1686126436530" duration="7000" />
       <workItem from="1686211734428" duration="938000" />
+      <workItem from="1686402994641" duration="4872000" />
+      <workItem from="1686407961252" duration="4074000" />
+      <workItem from="1686491886091" duration="2784000" />
     </task>
     <task id="LOCAL-00001" summary="Add FileDataStorage abstraction">
       <created>1686080080927</created>

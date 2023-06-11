@@ -6,7 +6,7 @@ public class WarehouseDataStorage : FileDataStorage<Warehouse>
 {
     private const string Path = "warehouse.txt";
     
-    protected WarehouseDataStorage() : base(Path)
+    public WarehouseDataStorage() : base(Path)
     {
     }
 }

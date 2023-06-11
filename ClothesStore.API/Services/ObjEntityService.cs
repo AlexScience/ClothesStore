@@ -3,28 +3,28 @@ using ClothesStore.Models.Models;
 
 namespace ClothesStore.API.Services;
 
-public class ObjServices<T> :IServices<T>
+public class ObjEntityService<T> :IEntityService<T>
     where T : IEntity
 {
     private readonly IDataStorage<T> _objStorage;
 
-    public ObjServices(IDataStorage<T> objStorage)
+    public ObjEntityService(IDataStorage<T> objStorage)
     {
         _objStorage = objStorage;
     }
 
-    public void CreateObj(T obj)
+    public void Create(T obj)
     {
         _objStorage.Save(obj);
     }
 
-    public IEnumerable<T> GetAllObj()
+    public IEnumerable<T> GetAll()
     {
         return _objStorage.FetchAll();
     }
 
-    public T GetObjById(Guid objId)
+    public T GetById(Guid id)
     {
-        return _objStorage.Fetch(objId);
+        return _objStorage.Fetch(id);
     }
 }

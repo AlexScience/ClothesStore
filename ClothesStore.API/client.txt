@@ -1,1 +1,1 @@
-[{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Name":"asasa","Email":"string","PhoneNumber":"string","DeliveryAddress":"string"}]
+[{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa6","Name":"Alex","Email":"Asta@gmail.com","PhoneNumber":"\u002B7348934893","DeliveryAddress":"string"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa7","Name":"Sem","Email":"Stupid_Asta@gmail.com","PhoneNumber":"\u002B7348934893","DeliveryAddress":"string"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa9","Name":"string","Email":"string","PhoneNumber":"string","DeliveryAddress":"string"}]

@@ -8,30 +8,30 @@ namespace ClothesStore.API.Controllers;
 [Route("[controller]")]
 public class ProductItemController : ControllerBase
 {
-    private readonly IProductsService _productsService;
+    private readonly IEntityService<ProductItem> _productsEntityService;
 
-    public ProductItemController(IProductsService productsService)
+    public ProductItemController(IEntityService<ProductItem> productsEntityService)
     {
-        _productsService = productsService;
+        _productsEntityService = productsEntityService;
     }
 
     [HttpGet("all")]
-    public ActionResult<IEnumerable<ProductItem>> GetAllProductItem()
+    public ActionResult<IEnumerable<ProductItem>> GetAllProduct()
     {
-        var product = _productsService.GetAllProductItem();
-        return Ok(product);
+        var products = _productsEntityService.GetAll();
+        return Ok(products);
     }
 
     [HttpGet("id")]
-    public ActionResult<IEnumerable<ProductItem>> GetProductById(Guid porductId)
+    public ActionResult<IEnumerable<ProductItem>> GetProductById(Guid productId)
     {
-        ProductItem product = _productsService.GetProductItemId(porductId);
+        ProductItem product = _productsEntityService.GetById(productId);
         return Ok(product);
     }
 
     [HttpPost]
-    public void Create(ProductItem product)
+    public void CreateProduct(ProductItem product)
     {
-        _productsService.CreateProduct(product);
+        _productsEntityService.Create(product);
     }
 }

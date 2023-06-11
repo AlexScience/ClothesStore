@@ -8,30 +8,30 @@ namespace ClothesStore.API.Controllers;
 [Route("[controller]")]
 public class ClientsController : ControllerBase
 {
-    private readonly IClientsService _clientsService;
+    private readonly IEntityService<Client> _clientsEntityService;
 
-    public ClientsController(IClientsService clientsService)
+    public ClientsController(IEntityService<Client> clientsEntityService)
     {
-        _clientsService = clientsService;
+        _clientsEntityService = clientsEntityService;
     }
 
     [HttpGet("all")]
     public ActionResult<IEnumerable<Client>> GetAllClients()
     {
-        var clients = _clientsService.GetAllClients();
+        var clients = _clientsEntityService.GetAll();
         return Ok(clients);
     }
 
     [HttpGet("id")]
     public ActionResult<IEnumerable<Client>> GetClientById(Guid clientId)
     {
-        Client client = _clientsService.GetClientById(clientId);
+        Client client = _clientsEntityService.GetById(clientId);
         return Ok(client);
     }
-    
+
     [HttpPost]
-    public void Create(Client client)
+    public void CreateClient(Client client)
     {
-        _clientsService.CreateClient(client);
+        _clientsEntityService.Create(client);
     }
 }

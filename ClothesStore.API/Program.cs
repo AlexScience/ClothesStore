@@ -1,3 +1,4 @@
+using ClothesStore.API.Controllers;
 using ClothesStore.API.DAL;
 using ClothesStore.API.Services;
 using ClothesStore.Models.Models;
@@ -9,9 +10,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<IDataStorage<Client>, ClientDataStorage>();
-builder.Services.AddScoped<IClientsService, ClientsServices>();
+builder.Services.AddScoped<IEntityService<Client>, ClientsEntityService>();
+
 builder.Services.AddScoped<IDataStorage<ProductItem>, ProductItemDataStorage>();
-builder.Services.AddScoped<IProductsService, ProductServices>();
+builder.Services.AddScoped<IEntityService<ProductItem>, ProductEntityService>();
+
+builder.Services.AddScoped<IDataStorage<Order>, OrderDataStorage>();
+builder.Services.AddScoped<IEntityService<Order>, OrderEntityService>();
+
+builder.Services.AddScoped<IDataStorage<Shipment>, ShipmentDataStorage>();
+builder.Services.AddScoped<IEntityService<Shipment>, ShipmentEntityService>();
+
+builder.Services.AddScoped<IDataStorage<Warehouse>, WarehouseDataStorage>();
+builder.Services.AddScoped<IEntityService<Warehouse>, WarehouseEntityService>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

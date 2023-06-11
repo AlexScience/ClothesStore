@@ -6,7 +6,7 @@ public class ShipmentDataStorage : FileDataStorage<Shipment>
 {
     private const string Path = "shipment.txt";
     
-    protected ShipmentDataStorage() : base(Path)
+    public ShipmentDataStorage() : base(Path)
     {
     }
 }

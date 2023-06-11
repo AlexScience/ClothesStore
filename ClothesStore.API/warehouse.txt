@@ -1,0 +1,1 @@
+[{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa9","Name":"Warehouse","Address":"@Warehouse@"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa8","Name":"Warehouse","Address":"Stock"},{"Id":"3fa85f64-5717-4562-b3fc-2c963f66afa5","Name":"Warehouse2","Address":"Stock2"}]
