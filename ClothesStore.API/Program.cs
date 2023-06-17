@@ -2,12 +2,18 @@ using ClothesStore.API.Controllers;
 using ClothesStore.API.DAL;
 using ClothesStore.API.Services;
 using ClothesStore.Models.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<StoreDbContext>((opt) =>
+{
+    opt.UseSqlServer("Server=localhost,1433;Database=Clients;User=sa;Password=qwe1234qwe1234");
+});
 
 builder.Services.AddScoped<IDataStorage<Client>, ClientDataStorage>();
 builder.Services.AddScoped<IEntityService<Client>, ClientsEntityService>();

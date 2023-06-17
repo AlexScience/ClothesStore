@@ -9,31 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0f0b3c7-517a-43ca-9204-2daf77c3b5e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/OrderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ShipmentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/WarehouseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsEntityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/OrderEntityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ProductEntityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ShipmentEntityService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/Services/WarehouseEntityService.cs" afterDir="false" />
+    <list default="true" id="c0f0b3c7-517a-43ca-9204-2daf77c3b5e8" name="Changes" comment="Create Controller and Services Warehouse,Order,Shipment">
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/StoreDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Controllers/ProductItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ProductItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/ClothesStore.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/ClothesStore.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsServices.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IClientsService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IProductsService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/IEntityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ObjServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ObjEntityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ProductServices.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/client.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/product.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +61,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -159,7 +143,10 @@
       <workItem from="1686211734428" duration="938000" />
       <workItem from="1686402994641" duration="4872000" />
       <workItem from="1686407961252" duration="4074000" />
-      <workItem from="1686491886091" duration="2784000" />
+      <workItem from="1686491886091" duration="3126000" />
+      <workItem from="1686641450927" duration="3223000" />
+      <workItem from="1687007094062" duration="1921000" />
+      <workItem from="1687017997811" duration="3756000" />
     </task>
     <task id="LOCAL-00001" summary="Add FileDataStorage abstraction">
       <created>1686080080927</created>
@@ -168,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686080080927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Controller and Services Warehouse,Order,Shipment">
+      <created>1686495041801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686495041801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add FileDataStorage abstraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add FileDataStorage abstraction" />
+    <MESSAGE value="Create Controller and Services Warehouse,Order,Shipment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Controller and Services Warehouse,Order,Shipment" />
   </component>
 </project>
