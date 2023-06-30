@@ -1,0 +1,35 @@
+﻿@page "/client"
+@using Blazorise
+
+@inject HttpClient httpClient;
+
+
+@code
+{
+    private IEnumerable<Client> _clients;
+
+    protected async Task OnInitialized()
+    {
+        base.OnInitialized();
+        var request = new HttpRequestMessage
+        {
+            RequestUri = new Uri("http://localhost:5120/Clients/all"),
+            Method = HttpMethod.Get
+        };
+
+        using var response = await httpClient.SendAsync(request);
+
+        _clients = await response.Content.ReadFromJsonAsync<Client[]>();
+
+        
+    }
+    
+
+    // Доделать получение клиентов из response.Content через await response.Content.ReadFromJsonAsync<Client[]>()
+
+
+
+
+
+
+}

@@ -10,10 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<StoreDbContext>((opt) =>
-{
-    opt.UseSqlServer("Server=localhost,1433;Database=Clients;User=sa;Password=qwe1234qwe1234");
-});
+// builder.Services.AddDbContext<StoreDbContext>((opt) =>
+// {
+//     opt.UseSqlServer("Server=localhost,1433;Database=Clients;User=sa;Password=qwe1234qwe1234");
+// });
 
 builder.Services.AddScoped<IDataStorage<Client>, ClientDataStorage>();
 builder.Services.AddScoped<IEntityService<Client>, ClientsEntityService>();
