@@ -7,11 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ClothesStore.API\ClothesStore.API.csproj" />
       <ProjectReference Include="..\ClothesStore.Models\ClothesStore.Models.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Blazorise" Version="1.2.4" />
+      <PackageReference Include="Blazorise.Bootstrap" Version="1.2.4" />
+      <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="6.0.19" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0-preview.5.23280.8" />
     </ItemGroup>
 
 </Project>

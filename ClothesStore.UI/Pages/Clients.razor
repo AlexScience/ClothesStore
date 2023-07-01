@@ -1,12 +1,10 @@
-﻿@page "/client"
-@using Blazorise
+﻿@page "/clients"
 
 @inject HttpClient httpClient;
 
-
 @code
 {
-    private IEnumerable<Client> _clients;
+    protected IEnumerable<Client> _clients;
 
     protected async Task OnInitialized()
     {
@@ -20,16 +18,29 @@
         using var response = await httpClient.SendAsync(request);
 
         _clients = await response.Content.ReadFromJsonAsync<Client[]>();
-
-        
     }
-    
-
-    // Доделать получение клиентов из response.Content через await response.Content.ReadFromJsonAsync<Client[]>()
-
-
-
-
-
 
 }
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Имя</TableHeaderCell>
+            <TableHeaderCell>Телефон</TableHeaderCell>
+            <TableHeaderCell>Адрес электронной почты</TableHeaderCell>
+            <TableHeaderCell>Адрес доставки</TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var client in _clients)
+        {
+            <TableRow>
+                <TableDataCell>@client.Name</TableDataCell>
+                <TableDataCell>@client.PhoneNumber</TableDataCell>
+                <TableDataCell>@client.Email</TableDataCell>
+                <TableDataCell>@client.DeliveryAddress</TableDataCell>
+            </TableRow>
+        }
+    </TableBody>
+</Table>
+
+

@@ -10,6 +10,7 @@
       <PackageReference Include="Blazorise" Version="1.2.4" />
       <PackageReference Include="Blazorise.Bootstrap" Version="1.2.4" />
       <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.2.4" />
+      <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="6.0.19" />
     </ItemGroup>
 
 </Project>
