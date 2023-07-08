@@ -25,8 +25,8 @@ public class ClientsController : ControllerBase
     [HttpGet("id")]
     public ActionResult<IEnumerable<Client>> GetClientById(Guid clientId)
     {
-        Client client = _clientsEntityService.GetById(clientId);
-        return Ok(client);
+        var client = _clientsEntityService.GetById(clientId);
+        return client == null ? NotFound("Клиент не найден") : Ok(client);
     }
 
     [HttpPost]

@@ -1,8 +1,11 @@
 using ClothesStore.API.Controllers;
 using ClothesStore.API.DAL;
+using ClothesStore.API.DAL.FileStorage;
 using ClothesStore.API.Services;
 using ClothesStore.Models.Models;
 using Microsoft.EntityFrameworkCore;
+
+using DbClientsDataStorage = ClothesStore.API.DAL.DbStorage.ClientsDataStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,12 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// builder.Services.AddDbContext<StoreDbContext>((opt) =>
-// {
-//     opt.UseSqlServer("Server=localhost,1433;Database=Clients;User=sa;Password=qwe1234qwe1234");
-// });
+builder.Services.AddDbContext<StoreDbContext>((opt) =>
+{
+     opt.UseNpgsql("Server=localhost;Port=54320;Database=postgres;User Id=postgres;Password=my_password");
+});
 
-builder.Services.AddScoped<IDataStorage<Client>, ClientDataStorage>();
+builder.Services.AddScoped<IDataStorage<Client>, DbClientsDataStorage>();
 builder.Services.AddScoped<IEntityService<Client>, ClientsEntityService>();
 
 builder.Services.AddScoped<IDataStorage<ProductItem>, ProductItemDataStorage>();

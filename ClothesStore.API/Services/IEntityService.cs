@@ -4,5 +4,5 @@ public interface IEntityService<T>
 {
     public void Create(T obj);
     public IEnumerable<T> GetAll();
-    public T GetById(Guid id);
+    public T? GetById(Guid id);
 }

@@ -2,26 +2,8 @@
 
 @inject HttpClient httpClient;
 
-@code
-{
-    protected IEnumerable<Client> _clients;
 
-    protected async Task OnInitialized()
-    {
-        base.OnInitialized();
-        var request = new HttpRequestMessage
-        {
-            RequestUri = new Uri("http://localhost:5120/Clients/all"),
-            Method = HttpMethod.Get
-        };
-
-        using var response = await httpClient.SendAsync(request);
-
-        _clients = await response.Content.ReadFromJsonAsync<Client[]>();
-    }
-
-}
-<Table>
+<Table Striped>
     <TableHeader>
         <TableRow>
             <TableHeaderCell>Имя</TableHeaderCell>
@@ -34,13 +16,30 @@
         @foreach (var client in _clients)
         {
             <TableRow>
-                <TableDataCell>@client.Name</TableDataCell>
-                <TableDataCell>@client.PhoneNumber</TableDataCell>
-                <TableDataCell>@client.Email</TableDataCell>
-                <TableDataCell>@client.DeliveryAddress</TableDataCell>
+                <TableRowCell>@client.Name</TableRowCell>
+                <TableRowCell>@client.PhoneNumber</TableRowCell>
+                <TableRowCell>@client.Email</TableRowCell>
+                <TableRowCell>@client.DeliveryAddress</TableRowCell>
             </TableRow>
         }
     </TableBody>
 </Table>
 
+@code
+{
+    protected IEnumerable<Client> _clients = Array.Empty<Client>();
 
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        var request = new HttpRequestMessage
+        {
+            RequestUri = new Uri("https://localhost:7025/Clients/all"),
+            Method = HttpMethod.Get
+        };
+
+        using var response = await httpClient.SendAsync(request);
+
+        _clients = await response.Content.ReadFromJsonAsync<Client[]>();
+    }
+}

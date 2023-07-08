@@ -1,10 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+namespace ClothesStore.UI.Models;
 
-namespace ClothesStore.Models.Models;
-
-public record Client : IEntity
+public sealed record ClientDraft
 {
-    public Guid Id { get; init; }
     public string Name { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string PhoneNumber { get; set; } = string.Empty;

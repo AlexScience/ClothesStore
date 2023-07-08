@@ -3,7 +3,7 @@ using ClothesStore.Models.Models;
 
 namespace ClothesStore.API.Services;
 
-public class ClientsEntityService : IEntityService<Client>
+public class ClientsEntityService : IEntityService<Client?>
 {
     private readonly IDataStorage<Client> _clientStorage;
 
@@ -22,7 +22,7 @@ public class ClientsEntityService : IEntityService<Client>
         return _clientStorage.FetchAll();
     }
 
-    public Client GetById(Guid id)
+    public Client? GetById(Guid id)
     {
         return _clientStorage.Fetch(id);
     }

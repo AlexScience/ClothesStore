@@ -1,6 +1,6 @@
 ﻿using ClothesStore.Models.Models;
 
-namespace ClothesStore.API.DAL;
+namespace ClothesStore.API.DAL.FileStorage;
 
 public class WarehouseDataStorage : FileDataStorage<Warehouse>
 {

@@ -1,0 +1,51 @@
+@page "/AddClient"
+@using ClothesStore.UI.Models
+
+@inject HttpClient HttpClient;
+@inject NavigationManager Navigation;
+
+<h3>Add new client</h3>
+
+<Label>Имя:</Label>
+<TextEdit @bind-Text="@_clientDraft.Name" />
+
+<Label>Email:</Label>
+<TextEdit Role="TextRole.Email" @bind-Text="@_clientDraft.Email" />
+
+<Label>Телефон:</Label>
+<TextEdit @bind-Text="@_clientDraft.PhoneNumber" />
+
+<Label>Адрес доставки:</Label>
+<TextEdit @bind-Text="@_clientDraft.DeliveryAddress" />
+
+<Blazorise.Button Type="ButtonType.Submit" Clicked="async () => await SaveClient()">Сохранить</Blazorise.Button>
+
+@code {
+    private ClientDraft _clientDraft = new();
+
+    private async Task SaveClient()
+    {
+        var newClient = new Client()
+        {
+            Id = Guid.NewGuid(),
+            Name = _clientDraft.Name,
+            Email = _clientDraft.Email,
+            DeliveryAddress = _clientDraft.DeliveryAddress,
+            PhoneNumber = _clientDraft.PhoneNumber
+        };
+        
+        var request = new HttpRequestMessage
+        {
+            RequestUri = new Uri("https://localhost:7025/Clients"),
+            Method = HttpMethod.Post,
+            Content = JsonContent.Create(newClient)
+        };
+        
+        using var response = await HttpClient.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/clients");
+        }
+    }
+}

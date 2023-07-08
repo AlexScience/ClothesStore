@@ -1,7 +1,6 @@
-using System.Text.Json;
 using ClothesStore.Models.Models;
 
-namespace ClothesStore.API.DAL;
+namespace ClothesStore.API.DAL.FileStorage;
 
 public class ClientDataStorage : FileDataStorage<Client>
 {
