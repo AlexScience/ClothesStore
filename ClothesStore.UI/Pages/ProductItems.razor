@@ -1,0 +1,44 @@
+@page "/productItems"
+
+@inject HttpClient HttpProductItem;
+
+<Table Striped>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Номенклатурный номер</TableHeaderCell>
+            <TableHeaderCell>Наименование</TableHeaderCell>
+            <TableHeaderCell>Категория</TableHeaderCell>
+            <TableHeaderCell>Описание</TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var product in _products)
+        {
+            <TableRow>
+                <TableRowCell>@product.NomenclatureNumber</TableRowCell>
+                <TableRowCell>@product.Name</TableRowCell>
+                <TableRowCell>@product.Category</TableRowCell>
+                <TableRowCell>@product.Description</TableRowCell>
+            </TableRow>
+        }
+    </TableBody>
+</Table>
+
+@code
+{
+    protected IEnumerable<ClothesStore.Models.Models.ProductItem> _products = Array.Empty<ClothesStore.Models.Models.ProductItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        var request = new HttpRequestMessage
+        {
+            RequestUri = new Uri("https://localhost:7025/ProductItem/all"),
+            Method = HttpMethod.Get
+        };
+
+        using var response = await HttpProductItem.SendAsync(request);
+
+        _products = await response.Content.ReadFromJsonAsync<ClothesStore.Models.Models.ProductItem[]>();
+    }
+}

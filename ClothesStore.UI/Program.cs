@@ -4,7 +4,6 @@ using Blazorise.Icons.FontAwesome;
 using Blazorise.Modules;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-
 using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
@@ -28,6 +27,9 @@ builder.Services.AddHttpClient();
 builder.Services.AddTransient<IEntity, Client>();
 builder.Services.AddScoped<ClothesStore.UI.Pages.Clients>();
 
+// builder.Services.AddHttpClient();
+builder.Services.AddTransient<IEntity, ProductItem>();
+builder.Services.AddScoped<ClothesStore.UI.Pages.ProductItems>();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

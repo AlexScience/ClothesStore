@@ -14,28 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f0b3c7-517a-43ca-9204-2daf77c3b5e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/Configurations/ClientsConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/DbStorage/ClientsDataStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Models/ClientDraft.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/AddClient.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/Configurations/ProductItemConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/DbStorage/ProductItemDataStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Models/ProductItemDraft.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/AddProductItem.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/ProductItems.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_Update_at_30_06_2023_15_36_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_Update_at_30_06_2023_15_36__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/ClothesStore.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/ClothesStore.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/ClientDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/ClientDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/FileDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/FileDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/IDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/IDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/OrderDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/OrderDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/ProductItemDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/ProductItemDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/ShipmentDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/ShipmentDataStorage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/StoreDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/StoreDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/WarehouseDataStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/WarehouseDataStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsEntityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/ClientsEntityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Services/IEntityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Services/IEntityService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.Models/ClothesStore.Models.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.Models/ClothesStore.Models.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.UI/ClothesStore.UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/ClothesStore.UI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/product.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Pages/Clients.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/Clients.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Pages/_Host.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/_Host.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,10 +44,6 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/ClothesStore-main/ClothesStore.UI/Pages/_Host.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/ClothesStore-main/ClothesStore.UI/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13e4a284d4277a8bc63f81f597fe304e20bfae856cc237da5f8cf941e5176/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
@@ -65,7 +51,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5f96f26f564facc854ccce69112f5ae5fe3a4b/Components_Progress_PageProgressAlert_razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/66fb396b9859c8734ef8e8dd529955858164ba8a4e32d9085dd3099d5c9127b/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/70df3e5caa697356d2da36622f77875efdb4473eafb5bfb84fe07e71a22b9499/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/aacc74311ca994f12b71cddb22241be9d6654c65e94f5985c5488dee396916f/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d8cea689d6b5a6901788ff87d73c1018881fe6/Components_Table_Table_razor.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9daeeaab8409865442b5e80e634dc64dae9a14892fe81e0f17b46f51b2c48f8/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClothesStore.API/Controllers/ClientsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/ClientDataStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ClothesStore.API/DAL/FileStorage/FileDataStorage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,30 +68,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "/Users/alex/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/alex/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/alex/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/alex/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/alex/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/alex/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ClothesStore.API: https">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -237,6 +225,7 @@
       <workItem from="1688477056599" duration="8261000" />
       <workItem from="1688807007399" duration="302000" />
       <workItem from="1688216964105" duration="4025000" />
+      <workItem from="1689235011176" duration="1798000" />
     </task>
     <task id="LOCAL-00001" summary="Add FileDataStorage abstraction">
       <created>1686080080927</created>
@@ -260,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688127865685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Full clients operations cycle">
+      <option name="closed" value="true" />
+      <created>1688818023287</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688818023288</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +292,8 @@
     <MESSAGE value="Add FileDataStorage abstraction" />
     <MESSAGE value="Create Controller and Services Warehouse,Order,Shipment" />
     <MESSAGE value="Add Blazorise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Controller and Services Warehouse,Order,Shipment" />
+    <MESSAGE value="Full clients operations cycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full clients operations cycle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

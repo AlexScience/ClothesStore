@@ -1,0 +1,52 @@
+@page "/AddProductItem"
+@using ClothesStore.UI.Models
+
+@inject HttpClient HttpProductItem;
+@inject NavigationManager Navigation;
+
+<h3>Add new client</h3>
+
+<Label>Номенклатурный номер:</Label>
+<TextEdit @bind-Text="@_productItemDraft.NomenclatureNumber"/>
+
+<Label>Наименование:</Label>
+<TextEdit Role="TextRole.Email" @bind-Text="@_productItemDraft.Name"/>
+
+<Label>Категория:</Label>
+<TextEdit @bind-Text="@_productItemDraft.Category"/>
+
+<Label>Описание:</Label>
+<TextEdit @bind-Text="@_productItemDraft.Description"/>
+
+<Blazorise.Button Type="ButtonType.Submit" Clicked="async () => await SaveProductItem()">Сохранить</Blazorise.Button>
+
+@code {
+    private ProductItemDraft _productItemDraft = new();
+
+    private async Task SaveProductItem()
+    {
+        var newProduct = new ProductItem()
+        {
+            Id = Guid.NewGuid(),
+            NomenclatureNumber = _productItemDraft.NomenclatureNumber,
+            Name = _productItemDraft.Name,
+            Category = _productItemDraft.Category,
+            Description = _productItemDraft.Description
+        };
+
+        var request = new HttpRequestMessage
+        {
+            RequestUri = new Uri("https://localhost:7025/ProductItem"),
+            Method = HttpMethod.Post,
+            Content = JsonContent.Create(newProduct)
+        };
+
+        using var response = await HttpProductItem.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/productItems");
+        }
+    }
+
+}

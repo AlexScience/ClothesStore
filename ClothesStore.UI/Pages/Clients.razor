@@ -1,6 +1,6 @@
 ﻿@page "/clients"
 
-@inject HttpClient httpClient;
+@inject HttpClient HttpClient;
 
 
 <Table Striped>
@@ -38,7 +38,7 @@
             Method = HttpMethod.Get
         };
 
-        using var response = await httpClient.SendAsync(request);
+        using var response = await HttpClient.SendAsync(request);
 
         _clients = await response.Content.ReadFromJsonAsync<Client[]>();
     }
