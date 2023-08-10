@@ -14,18 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f0b3c7-517a-43ca-9204-2daf77c3b5e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/Configurations/ProductItemConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/DbStorage/ProductItemDataStorage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Models/ProductItemDraft.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/AddProductItem.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/ProductItems.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_Update_at_30_06_2023_15_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_Update_at_30_06_2023_15_36__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/dataSources/992343fa-13e4-4ccc-8897-53e25cbbf6de/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/shelf/Uncommitted_changes_before_Update_at_08_07_2023__13_08__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClothesStore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/Configurations/ProductItemConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/Configurations/ProductItemsConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.API/DAL/StoreDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/DAL/StoreDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.API/Migrations/StoreDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/Migrations/StoreDbContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.API/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.API/product.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Pages/Clients.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/Clients.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Models/ProductItemDraft.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Models/ProductItemDraft.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Pages/ProductItems.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Pages/ProductItems.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClothesStore.UI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ClothesStore.UI/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,6 +224,13 @@
       <workItem from="1688807007399" duration="302000" />
       <workItem from="1688216964105" duration="4025000" />
       <workItem from="1689235011176" duration="1798000" />
+      <workItem from="1689422525319" duration="5045000" />
+      <workItem from="1689453818213" duration="61000" />
+      <workItem from="1689490389212" duration="1044000" />
+      <workItem from="1690899213385" duration="167000" />
+      <workItem from="1690902390328" duration="293000" />
+      <workItem from="1690906593795" duration="1474000" />
+      <workItem from="1691079448468" duration="893000" />
     </task>
     <task id="LOCAL-00001" summary="Add FileDataStorage abstraction">
       <created>1686080080927</created>
@@ -257,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688818023288</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Full ProductItem operations cycle">
+      <option name="closed" value="true" />
+      <created>1689422772653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689422772653</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +306,8 @@
     <MESSAGE value="Create Controller and Services Warehouse,Order,Shipment" />
     <MESSAGE value="Add Blazorise" />
     <MESSAGE value="Full clients operations cycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Full clients operations cycle" />
+    <MESSAGE value="Full ProductItem operations cycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full ProductItem operations cycle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

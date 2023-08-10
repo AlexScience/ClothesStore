@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.48">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>489</IntrospectionStateNumber>
+      <IntrospectionStateNumber>521</IntrospectionStateNumber>
       <ServerVersion>13.11</ServerVersion>
-      <StartupTime>1688810795</StartupTime>
+      <StartupTime>1690899240</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1402,7 +1402,7 @@ true posixrules
 13184||10|C|G
 13184||-9223372036854775808|U|G
 13184||10|U|G</Grants>
-      <IntrospectionStateNumber>489</IntrospectionStateNumber>
+      <IntrospectionStateNumber>521</IntrospectionStateNumber>
       <ObjectId>13468</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4728,7 +4728,7 @@ true posixrules
     <schema id="252" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>489</IntrospectionStateNumber>
+      <IntrospectionStateNumber>521</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>287</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4745,21 +4745,27 @@ true posixrules
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="255" parent="253" name="MigrationId">
+    <table id="255" parent="252" name="product_items">
+      <ObjectId>24585</ObjectId>
+      <StateNumber>520</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="256" parent="253" name="MigrationId">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>487</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="256" parent="253" name="ProductVersion">
+    <column id="257" parent="253" name="ProductVersion">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>487</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="257" parent="253" name="PK___EFMigrationsHistory">
+    <index id="258" parent="253" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <ObjectId>16387</ObjectId>
       <Primary>1</Primary>
@@ -4770,48 +4776,48 @@ true posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="258" parent="253" name="PK___EFMigrationsHistory">
+    <key id="259" parent="253" name="PK___EFMigrationsHistory">
       <ObjectId>16388</ObjectId>
       <Primary>1</Primary>
       <StateNumber>487</StateNumber>
       <UnderlyingIndexId>16387</UnderlyingIndexId>
     </key>
-    <column id="259" parent="254" name="Id">
+    <column id="260" parent="254" name="Id">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>488</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="260" parent="254" name="name">
+    <column id="261" parent="254" name="name">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="261" parent="254" name="email">
+    <column id="262" parent="254" name="email">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="262" parent="254" name="phone_number">
+    <column id="263" parent="254" name="phone_number">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="263" parent="254" name="delivery_address">
+    <column id="264" parent="254" name="delivery_address">
       <DasType>varchar|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>488</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="264" parent="254" name="PK_clients">
+    <index id="265" parent="254" name="PK_clients">
       <ColNames>Id</ColNames>
       <ObjectId>16395</ObjectId>
       <Primary>1</Primary>
@@ -4819,11 +4825,60 @@ true posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="265" parent="254" name="PK_clients">
+    <key id="266" parent="254" name="PK_clients">
       <ObjectId>16396</ObjectId>
       <Primary>1</Primary>
       <StateNumber>488</StateNumber>
       <UnderlyingIndexId>16395</UnderlyingIndexId>
+    </key>
+    <column id="267" parent="255" name="Id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>520</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="268" parent="255" name="nomenclature_number">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>520</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="269" parent="255" name="name">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>520</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="270" parent="255" name="category">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>520</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="271" parent="255" name="description">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>520</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="272" parent="255" name="PK_product_items">
+      <ColNames>Id</ColNames>
+      <ObjectId>24591</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>520</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="273" parent="255" name="PK_product_items">
+      <ObjectId>24592</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>520</StateNumber>
+      <UnderlyingIndexId>24591</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

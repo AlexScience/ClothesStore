@@ -25,11 +25,10 @@ builder.Services
 
 builder.Services.AddHttpClient();
 builder.Services.AddTransient<IEntity, Client>();
-builder.Services.AddScoped<ClothesStore.UI.Pages.Clients>();
+builder.Services.AddScoped<Clients>();
 
-// builder.Services.AddHttpClient();
 builder.Services.AddTransient<IEntity, ProductItem>();
-builder.Services.AddScoped<ClothesStore.UI.Pages.ProductItems>();
+builder.Services.AddScoped<ProductItems>();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

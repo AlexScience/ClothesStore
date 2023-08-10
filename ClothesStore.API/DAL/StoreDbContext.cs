@@ -19,6 +19,7 @@ public class StoreDbContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.ApplyConfiguration(new ClientsConfiguration());
+        modelBuilder.ApplyConfiguration(new ProductItemsConfiguration());
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -26,7 +26,7 @@
 
 @code
 {
-    protected IEnumerable<ClothesStore.Models.Models.ProductItem> _products = Array.Empty<ClothesStore.Models.Models.ProductItem>();
+    protected IEnumerable<ProductItem> _products = Array.Empty<ProductItem>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -39,6 +39,6 @@
 
         using var response = await HttpProductItem.SendAsync(request);
 
-        _products = await response.Content.ReadFromJsonAsync<ClothesStore.Models.Models.ProductItem[]>();
+        _products = await response.Content.ReadFromJsonAsync<ProductItem[]>();
     }
 }
